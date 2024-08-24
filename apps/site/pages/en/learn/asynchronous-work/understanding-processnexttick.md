@@ -22,7 +22,7 @@ It's the way we can tell the JS engine to process a function asynchronously (aft
 
 Calling `setTimeout(() => {}, 0)` will execute the function at the end of next tick, much later than when using `nextTick()` which prioritizes the call and executes it just before the beginning of the next tick.
 
-Use `nextTick()` when you want to make sure that in the next event loop iteration that code is already executed.
+Use `nextTick()` when you want to make sure that your code executes before the next event loop iteration starts.
 
 #### An Example of the order of events:
 
